@@ -1,0 +1,30 @@
+{
+  "pluginAlias": "C4DynamicPlatform",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Homebridge plugin for the control4 2 way web driver.",
+  "footerDisplay": "",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "base_url": {
+        "title": "base_url",
+        "type": "string",
+        "default": "http://10.0.1.70:9000",
+        "required": true,
+        "description": "full URL of the control4 device"
+      },
+      "refresh": {
+        "title": "refresh",
+        "type": "integer",
+        "default": 5000,
+        "required": true,
+        "description": "Refresh Time in MS"
+      }
+    }
+  },
+  "form": [
+    "base_url",
+    "refresh"
+  ]
+}
